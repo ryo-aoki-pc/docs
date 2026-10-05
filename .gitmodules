@@ -1,0 +1,28 @@
+[submodule "bash"]
+	path = bash
+	url = https://github.com/ryo-aoki-pc/bash.git
+	branch = main
+[submodule "setup-notes"]
+	path = setup-notes
+	url = https://github.com/ryo-aoki-pc/setup-notes.git
+	branch = main
+[submodule "kvm-container"]
+	path = kvm-container
+	url = https://github.com/ryo-aoki-pc/kvm-container.git
+	branch = main
+[submodule "lazygit"]
+	path = lazygit
+	url = https://github.com/ryo-aoki-pc/lazygit.git
+	branch = custom
+[submodule "yazi"]
+	path = yazi
+	url = https://github.com/ryo-aoki-pc/yazi.git
+	branch = custom
+[submodule "wezterm"]
+	path = wezterm
+	url = https://github.com/ryo-aoki-pc/wezterm.git
+	branch = main
+[submodule "LazyVimStarter"]
+	path = LazyVimStarter
+	url = https://github.com/ryo-aoki-pc/LazyVimStarter.git
+	branch = custom
