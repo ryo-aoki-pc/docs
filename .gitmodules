@@ -26,3 +26,7 @@
 	path = LazyVimStarter
 	url = https://github.com/ryo-aoki-pc/LazyVimStarter.git
 	branch = custom
+[submodule "md-table-excel"]
+	path = md-table-excel
+	url = https://github.com/ryo-aoki-pc/md-table-excel.git
+	branch = main
