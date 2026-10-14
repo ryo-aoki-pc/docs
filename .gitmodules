@@ -30,3 +30,7 @@
 	path = md-table-excel
 	url = https://github.com/ryo-aoki-pc/md-table-excel.git
 	branch = main
+[submodule "setup-notes-verification"]
+	path = setup-notes-verification
+	url = git@github.com:ryo-aoki-pc/setup-notes-verification.git
+	branch = main

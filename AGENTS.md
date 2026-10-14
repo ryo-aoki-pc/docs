@@ -10,7 +10,8 @@
 
 | パス | リポジトリ | 追うブランチ | 内容 |
 | --- | --- | --- | --- |
-| `setup-notes` | `ryo-aoki-pc/setup-notes` | `main` | AlmaLinux 10・Windows 11 の構築・設定の手順書と検証記録 |
+| `setup-notes` | `ryo-aoki-pc/setup-notes` | `main` | AlmaLinux 10・Windows 11 の構築・設定の手順書 |
+| `setup-notes-verification` | `ryo-aoki-pc/setup-notes-verification`（非公開） | `main` | setup-notes の手順書の検証記録 |
 | `bash` | `ryo-aoki-pc/bash` | `main` | 共通の bash の設定 |
 | `kvm-container` | `ryo-aoki-pc/kvm-container` | `main` | qemu-kvm と libvirt を systemd のコンテナに収め、軽いホストで VM を動かす |
 | `wezterm` | `ryo-aoki-pc/wezterm` | `main` | WezTerm の設定 |
@@ -20,6 +21,8 @@
 | `yazi` | `ryo-aoki-pc/yazi` | `custom` | yazi の設定 |
 
 各サブモジュールには、それぞれの AGENTS.md がある。サブモジュールの中で作業するときは、そちらに従う。
+
+`setup-notes-verification` だけは非公開で、URL は SSH（`git@github.com:`）にしてある。GitHub に SSH の鍵を登録していない環境では、このサブモジュールだけ取得に失敗する（ほかの 8 つは取り出せる）。
 
 ## 変更のしかた
 
