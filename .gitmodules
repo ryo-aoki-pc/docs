@@ -38,3 +38,7 @@
 	path = scene-browser
 	url = git@github.com:ryo-aoki-pc/scene-browser.git
 	branch = main
+[submodule "md-format"]
+	path = md-format
+	url = https://github.com/ryo-aoki-pc/md-format.git
+	branch = main
