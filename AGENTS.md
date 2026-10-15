@@ -16,6 +16,7 @@
 | `kvm-container` | `ryo-aoki-pc/kvm-container` | `main` | qemu-kvm と libvirt を systemd のコンテナに収め、軽いホストで VM を動かす |
 | `wezterm` | `ryo-aoki-pc/wezterm` | `main` | WezTerm の設定 |
 | `md-table-excel` | `ryo-aoki-pc/md-table-excel` | `main` | GLFM の表を Excel で編集する `mdtable` |
+| `md-format` | `ryo-aoki-pc/md-format` | `main` | GFM と GLFM の Markdown を、描画を変えずに整形する `mdfmt`（Neovim の保存の整形も使う） |
 | `scene-browser` | `ryo-aoki-pc/scene-browser`（非公開） | `main` | 手元の動画から場面を切り出し、ブラウザでサムネイルから再生する |
 | `LazyVimStarter` | `ryo-aoki-pc/LazyVimStarter` | `custom` | LazyVim をもとにした Neovim の設定 |
 | `lazygit` | `ryo-aoki-pc/lazygit` | `custom` | lazygit の設定と Excel の差分の道具 |
@@ -23,7 +24,7 @@
 
 各サブモジュールには、それぞれの AGENTS.md がある。サブモジュールの中で作業するときは、そちらに従う。
 
-`setup-notes-verification` と `scene-browser` は非公開で、URL は SSH（`git@github.com:`）にしてある。GitHub に SSH の鍵を登録していない環境では、この 2 つだけ取得に失敗する（ほかの 8 つは取り出せる）。
+`setup-notes-verification` と `scene-browser` は非公開で、URL は SSH（`git@github.com:`）にしてある。GitHub に SSH の鍵を登録していない環境では、この 2 つだけ取得に失敗する（ほかの 9 つは取り出せる）。
 
 ## 変更のしかた
 
