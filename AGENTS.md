@@ -21,7 +21,7 @@
 | `lazygit` | `ryo-aoki-pc/lazygit` | `custom` | lazygit の設定と Excel の差分の道具 |
 | `yazi` | `ryo-aoki-pc/yazi` | `custom` | yazi の設定 |
 
-各サブモジュールには、それぞれの AGENTS.md（scene-browser は CLAUDE.md）がある。サブモジュールの中で作業するときは、そちらに従う。
+各サブモジュールには、それぞれの AGENTS.md がある。サブモジュールの中で作業するときは、そちらに従う。
 
 `setup-notes-verification` と `scene-browser` は非公開で、URL は SSH（`git@github.com:`）にしてある。GitHub に SSH の鍵を登録していない環境では、この 2 つだけ取得に失敗する（ほかの 8 つは取り出せる）。
 
