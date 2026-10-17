@@ -14,6 +14,10 @@
 	path = lazygit
 	url = https://github.com/ryo-aoki-pc/lazygit.git
 	branch = custom
+[submodule "excel-diff"]
+	path = excel-diff
+	url = https://github.com/ryo-aoki-pc/excel-diff.git
+	branch = main
 [submodule "yazi"]
 	path = yazi
 	url = https://github.com/ryo-aoki-pc/yazi.git
