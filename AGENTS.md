@@ -13,7 +13,7 @@
 | パス | リポジトリ | 追うブランチ | 内容 |
 | --- | --- | --- | --- |
 | `setup-notes` | `ryo-aoki-pc/setup-notes` | `main` | AlmaLinux 10・Windows 11 の構築・設定の手順書 |
-| `setup-notes-verification` | `ryo-aoki-pc/setup-notes-verification`（非公開） | `main` | setup-notes の手順書の検証記録 |
+| `setup-notes-verification` | `ryo-aoki-pc/setup-notes-verification`（非公開） | `main` | setup-notes の手順書と、ほかの 8 つの公開リポジトリ（`repos/<名前>/`）の検証記録 |
 | `bash` | `ryo-aoki-pc/bash` | `main` | 共通の bash の設定 |
 | `kvm-container` | `ryo-aoki-pc/kvm-container` | `main` | qemu-kvm と libvirt を systemd のコンテナに収め、軽いホストで VM を動かす |
 | `wezterm` | `ryo-aoki-pc/wezterm` | `main` | WezTerm の設定 |
