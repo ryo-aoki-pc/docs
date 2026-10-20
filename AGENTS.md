@@ -31,15 +31,21 @@
 
 ## 変更のしかた
 
+- 作業は `main` の最新から始める。ファイルを変える前に `git fetch origin main` し、今のブランチが `origin/main` を含むこと（`git merge-base --is-ancestor origin/main HEAD` が成功する）を確かめる。ブランチを自分で作るときは、`origin/main` から作る（`git switch -c <ブランチ> origin/main`）
+- 含まなければ、ファイルを変える前に `origin/main` を取り込む。自分のコミットがまだ無ければ `git rebase origin/main`、push したコミットがあれば `git merge origin/main` にする（force push はしない）。Claude Code の worktree では、アプリのベースブランチとの同期を使う。参照を上げる作業も、始める直前に取り直した `origin/main` から始める
+- この取り込みは、利用者が頼んだ決まりで、「共同作業の規則」の、今のブランチに `main` を取り込む「頼まれたとき」に当たる
 - サブモジュールの中のファイルは、このリポジトリでは変えない。変えるときは、そのリポジトリを clone し、追うブランチへの Pull Request を作る
 - このリポジトリでは、サブモジュールの Pull Request が取り込まれた後に、参照を上げるだけにする
 - コミットメッセージは日本語で、「〜を含むサブモジュールへ更新する」の形にする（`git log` の過去のコミット）
 
 ```sh
-git submodule update --init                 # 参照しているコミットを取り出す
-git submodule update --remote <パス>        # .gitmodules のブランチの最新に上げる
-git submodule status                        # 参照しているコミットを見る
-git add <パス> && git commit                # 上げた参照をコミットする
+git fetch origin main                          # main の最新を取る
+git merge-base --is-ancestor origin/main HEAD  # 今のブランチが main の最新を含むか確かめる（含めば成功）
+git rebase origin/main                         # 含まず、自分のコミットがまだ無ければ、main の最新の上へ移す
+git submodule update --init                    # 参照しているコミットを取り出す
+git submodule update --remote <パス>           # .gitmodules のブランチの最新に上げる
+git submodule status                           # 参照しているコミットを見る
+git add <パス> && git commit                   # 上げた参照をコミットする
 ```
 
 - `git submodule update --remote` は、各リポジトリの最新を取り込む。取り込んでよいもの（マージ済みのもの）だけになっていることを、`git -C <パス> log --oneline` で確かめてからコミットする
