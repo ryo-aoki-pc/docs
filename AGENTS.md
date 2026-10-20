@@ -19,7 +19,7 @@
 | `wezterm` | `ryo-aoki-pc/wezterm` | `main` | WezTerm の設定 |
 | `md-table-excel` | `ryo-aoki-pc/md-table-excel` | `main` | GLFM の表を Excel で編集する `mdtable` |
 | `md-format` | `ryo-aoki-pc/md-format` | `main` | GFM と GLFM の Markdown を、描画を変えずに整形する `mdfmt`（Neovim の保存の整形も使う） |
-| `md-table-sticky` | `ryo-aoki-pc/md-table-sticky` | `main` | GitLab の Markdown の表で、先頭行・先頭列を固定してスクロールできるようにするブックマークレット |
+| `md-table-sticky` | `ryo-aoki-pc/md-table-sticky` | `main` | GitLab の Markdown の表で、先頭行・先頭列を固定してスクロールし、セルの折り返し・横スクロール・全幅の表示を切り替えるブックマークレット |
 | `excel-diff` | `ryo-aoki-pc/excel-diff` | `main` | Excel のブックと Word の文書を、セル・段落の単位で比べる道具（Git の差分表示・部分ステージ、2 つのファイルの取り込み） |
 | `LazyVimStarter` | `ryo-aoki-pc/LazyVimStarter` | `custom` | LazyVim をもとにした Neovim の設定 |
 | `lazygit` | `ryo-aoki-pc/lazygit` | `custom` | lazygit の設定 |
