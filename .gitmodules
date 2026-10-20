@@ -42,3 +42,7 @@
 	path = md-format
 	url = https://github.com/ryo-aoki-pc/md-format.git
 	branch = main
+[submodule "md-table-sticky"]
+	path = md-table-sticky
+	url = https://github.com/ryo-aoki-pc/md-table-sticky.git
+	branch = main
