@@ -12,7 +12,7 @@
 
 | パス | リポジトリ | 追うブランチ | 内容 |
 | --- | --- | --- | --- |
-| `setup-notes` | `ryo-aoki-pc/setup-notes` | `main` | AlmaLinux 10・Windows 11・Android の構築・設定の手順書 |
+| `setup-notes` | `ryo-aoki-pc/setup-notes` | `main` | AlmaLinux 10・Windows 11 の構築・設定の手順書 |
 | `setup-notes-verification` | `ryo-aoki-pc/setup-notes-verification`（非公開） | `main` | setup-notes の手順書と、ほかの公開リポジトリ（`repos/<名前>/`）の検証記録 |
 | `bash` | `ryo-aoki-pc/bash` | `main` | 共通の bash の設定 |
 | `kvm-container` | `ryo-aoki-pc/kvm-container` | `main` | qemu-kvm と libvirt を systemd のコンテナに収め、軽いホストで VM を動かす |
@@ -26,6 +26,8 @@
 | `yazi` | `ryo-aoki-pc/yazi` | `custom` | yazi の設定 |
 
 各サブモジュールには、それぞれの AGENTS.md がある。サブモジュールの中で作業するときは、そちらに従う。
+
+AI エージェントの手順と、職場で使わない手順（とその検証記録）は、Forgejo の非公開リポジトリ `setup-notes-private` にある。サブモジュールにはしない（GitHub から LAN のリポジトリを指さないため）。公開のリポジトリには、そこへのリンク・案内と、環境が分かる値（ホスト名・アドレス・機材）を書かない。
 
 `setup-notes-verification` は非公開で、URL は SSH（`git@github.com:`）にしてある。GitHub に SSH の鍵を登録していない環境では、これだけ取得に失敗する（ほかの 11 個は取り出せる）。
 
@@ -79,4 +81,4 @@ git add <パス> && git commit                   # 上げた参照をコミッ�
 - Claude Code から頼まれたエージェントは、上の自分の役割の範囲で作業する
 - レビューの指摘は、実物で確かめてから採る。採らなかった指摘は、理由を付けて報告する
 - 使えないエージェント（入っていない・ログインが切れた）は飛ばし、そのことを報告する
-- 頼み方は、[setup-notes](https://github.com/ryo-aoki-pc/setup-notes) の `docs/ai-agents.md` の「コーディングエージェントの共同作業: Windows 11 で既定で分担する」と、`docs/reference/coding-agents.md` の「既定の分担」
+- 頼み方は、Forgejo の非公開リポジトリ `setup-notes-private` の `docs/ai-agents.md` の「コーディングエージェントの共同作業: Windows 11 で既定で分担する」と、`docs/reference/coding-agents.md` の「既定の分担」
